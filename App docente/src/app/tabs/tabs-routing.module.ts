@@ -52,6 +52,21 @@ const routes: Routes = [
         path: 'codigo',
         loadChildren: () => import('../codigo/codigo.module').then( m => m.CodigoPageModule)
       },
+      {
+        path: 'docente',
+        loadChildren: () => import('../docente/docente.module').then( m => m.DocentePageModule)
+      },
+      {
+        path: 'lista',
+        loadChildren: () => import('../lista/lista.module').then( m => m.ListaPageModule)
+      },
+      {
+        path: 'vista',
+        loadChildren: () => import('../vista/vista.module').then( m => m.VistaPageModule)
+      },
+      
+     
+      
     
       {
         path: '',

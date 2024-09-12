@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Inicio Asistencia
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondohome">
+  <ion-header collapse="condense">
+   
+  </ion-header>
+
+  <ion-list [inset]="true">
+   
+
+
+    <ion-item>
+      <ion-select label="Clase" placeholder="Seleccionar">
+        <ion-select-option value="1">Clase 1 </ion-select-option>
+        <ion-select-option value="2">Clase 2</ion-select-option>
+        <ion-select-option value="3">Clase 3</ion-select-option>
+        <ion-select-option value="4">Clase 4</ion-select-option>
+        <ion-select-option value="5">Clase 5</ion-select-option>
+        <ion-select-option value="6">Clase 6</ion-select-option>
+        <ion-select-option value="7">Clase 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Asignatura" placeholder="Seleccionar">
+        <ion-select-option value="asig1">Asignatura 1 </ion-select-option>
+        <ion-select-option value="asig2">Asignatura 2</ion-select-option>
+        <ion-select-option value="asig3">Asignatura 3</ion-select-option>
+        <ion-select-option value="asig4">Asignatura 4</ion-select-option>
+        <ion-select-option value="asig5">Asignatura 5</ion-select-option>
+        <ion-select-option value="asig6">Asignatura 6</ion-select-option>
+        <ion-select-option value="asig7">Asignatura 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    
+    <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
+    <ion-item>
+      <ion-select label="Sala" placeholder="Seleccionar">
+        <ion-select-option value="profe1">Sala 1</ion-select-option>
+        <ion-select-option value="profe2 ">Sala 2</ion-select-option>
+        <ion-select-option value="profe3">Sala 3</ion-select-option>
+        <ion-select-option value="profe4">Sala 4</ion-select-option>
+        <ion-select-option value="profe5">Sala 5</ion-select-option>
+        <ion-select-option value="profe6">Sala 6</ion-select-option>
+        <ion-select-option value="profe7">Sala 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+   
+  </ion-list>
+
+  
+
+  <ion-card></ion-card>
+
+
+    
+  <div style="text-align: center;">
+    <ion-tab-button tab="lista" href="/tabs/lista">
+    <ion-button  fill="solid" shape="round" color="primary" style="padding-bottom: 10px;">
+      Ver Registros
+      
+    </ion-button>
+  </ion-tab-button>
+  </div>
+
+  
+</ion-content>

@@ -6,7 +6,7 @@
       </ion-button>
     </ion-buttons>
     <ion-title>
-      Generar QR
+      Inicio Asistencia
     </ion-title>
     <ion-buttons slot="end">
       <ion-back-button
@@ -23,20 +23,18 @@
   </ion-header>
 
   <ion-list [inset]="true">
-    <ion-item>
-      <ion-input label="Nombre completo:"></ion-input>
-    </ion-item>
+   
 
 
     <ion-item>
-      <ion-select label="Período académico" placeholder="Seleccionar">
-        <ion-select-option value="1">Período 1 </ion-select-option>
-        <ion-select-option value="2">Período 2</ion-select-option>
-        <ion-select-option value="3">Período 3</ion-select-option>
-        <ion-select-option value="4">Período 4</ion-select-option>
-        <ion-select-option value="5">Período 5</ion-select-option>
-        <ion-select-option value="6">Período 6</ion-select-option>
-        <ion-select-option value="7">Período 7</ion-select-option>
+      <ion-select label="Clase" placeholder="Seleccionar">
+        <ion-select-option value="1">Clase 1 </ion-select-option>
+        <ion-select-option value="2">Clase 2</ion-select-option>
+        <ion-select-option value="3">Clase 3</ion-select-option>
+        <ion-select-option value="4">Clase 4</ion-select-option>
+        <ion-select-option value="5">Clase 5</ion-select-option>
+        <ion-select-option value="6">Clase 6</ion-select-option>
+        <ion-select-option value="7">Clase 7</ion-select-option>
       </ion-select>
     </ion-item>
 
@@ -56,14 +54,14 @@
     
     <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
     <ion-item>
-      <ion-select label="Profesor" placeholder="Seleccionar">
-        <ion-select-option value="profe1">Profesor 1</ion-select-option>
-        <ion-select-option value="profe2 ">Profesor 2</ion-select-option>
-        <ion-select-option value="profe3">Profesor 3</ion-select-option>
-        <ion-select-option value="profe4">Profesor 4</ion-select-option>
-        <ion-select-option value="profe5">Profesor 5</ion-select-option>
-        <ion-select-option value="profe6">Profesor 6</ion-select-option>
-        <ion-select-option value="profe7">Profesor 7</ion-select-option>
+      <ion-select label="Sala" placeholder="Seleccionar">
+        <ion-select-option value="profe1">Sala 1</ion-select-option>
+        <ion-select-option value="profe2 ">Sala 2</ion-select-option>
+        <ion-select-option value="profe3">Sala 3</ion-select-option>
+        <ion-select-option value="profe4">Sala 4</ion-select-option>
+        <ion-select-option value="profe5">Sala 5</ion-select-option>
+        <ion-select-option value="profe6">Sala 6</ion-select-option>
+        <ion-select-option value="profe7">Sala 7</ion-select-option>
       </ion-select>
     </ion-item>
    
@@ -77,7 +75,7 @@
     
   <div style="text-align: center;">
     <ion-button (click)="login()" fill="solid" shape="round" color="primary" style="padding-bottom: 10px;">
-      Generar QR
+      Captura QR
     </ion-button>
   </div>
 

@@ -37,15 +37,17 @@
               </ion-tab-button>
             </ion-col>
             <ion-col size="4" routerLink="/perfil">
-              <ion-tab-button tab="perfil" href="/tabs/perfil">
+              <ion-tab-button tab="docente" href="/tabs/docente">
                 <ion-icon name="person" color="primary" size="large"></ion-icon>
-                <p>Perfil</p>
+                <p>Perfil Docente</p>
               </ion-tab-button>
             </ion-col>
+
+
             <ion-col size="4" routerLink="/qr">
-              <ion-tab-button tab="qr" href="/tabs/qr">
-                <ion-icon name="qr-code" color="primary" size="large"></ion-icon>
-                <p>Generar QR</p>
+              <ion-tab-button tab="codigo" href="/tabs/codigo">
+                <ion-icon name="barcode" color="primary" size="large"></ion-icon>
+                <p>Lector QR</p>
               </ion-tab-button>
             </ion-col>
 
@@ -60,16 +62,21 @@
           
 
         <ion-col size="4" routerLink="/page3">
-          <ion-tab-button tab="qr" href="/tabs/qr">
+          <ion-tab-button tab="vista" href="/tabs/vista">
           <ion-icon name="list" color="primary" size="large"></ion-icon>
-          <p>Asistencia</p>
+          <p>Asistencias</p>
         </ion-tab-button>
       </ion-col>
-
+<ion-col size="4" routerLink="/page3">
+  <ion-tab-button tab="qr" href="/tabs/qr">
+  <ion-icon name="qr-code" color="primary" size="large"></ion-icon>
+  <p>Comenzar Asistencia</p>
+</ion-tab-button>
+</ion-col>
       <ion-col size="4" routerLink="/page3">
-        <ion-tab-button tab="qr" href="/tabs/qr">
+        <ion-tab-button tab="perfil" href="/tabs/perfil">
         <ion-icon name="book" color="primary" size="large"></ion-icon>
-        <p>Asignaturas</p>
+        <p>Datos Docente</p>
       </ion-tab-button>
     </ion-col>
 
@@ -77,17 +84,12 @@
 
   <ion-col size="4" routerLink="/page3">
     <ion-tab-button tab="justificacion" href="/tabs/justificacion">
-    <ion-icon name="laptop" color="primary" size="large"></ion-icon>
-    <p>Justificar</p>
+    <ion-icon name="chatbubble-ellipses" color="primary" size="large"></ion-icon>
+    <p>Justificaciones</p>
   </ion-tab-button>
 </ion-col>
 
-<ion-col size="4" routerLink="/page3">
-  <ion-tab-button tab="justificacion" href="/tabs/justificacion">
-  <ion-icon name="card" color="primary" size="large"></ion-icon>
-  <p>Pagos</p>
-</ion-tab-button>
-</ion-col>
+
 
 <ion-col size="4" routerLink="/page3">
 

@@ -27,7 +27,7 @@ export class QrPage {
     const alert = await this.alertcontroller.create({
       header: 'Hola!',
       mode:'ios',
-      message:'Codigo Generado con exito '+this.correo,
+      message:'Se ha iniciado la captura de QR '+this.correo,
       buttons: [
         {
           text: 'Ingresar',
