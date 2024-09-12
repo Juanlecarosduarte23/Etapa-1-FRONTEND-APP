@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondohome">
+ 
+   <ion-card >
+    <img src="../assets/duoc.png">
+    <ion-card-header>
+      
+      <ion-card-title>Inicio Sesión</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+       <ion-item>
+        <ion-label position="stacked">Email:</ion-label>
+        <ion-input type="email" placeholder="Ingrese correo electrónico" name="correo" [(ngModel)]="correo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Contraseña:</ion-label>
+        <ion-input type="password" placeholder="Ingrese contraseña" name="pass" [(ngModel)]="pass"></ion-input>
+      </ion-item>
+    </ion-card-content>
+    <div style="text-align: center;">
+      <ion-button (click)="login()" fill="solid" shape="round" color="success" style="padding-bottom: 15px;">
+        Ingresar
+      </ion-button>
+    </div>
+
+    <div style="text-align: center;">
+      <ion-tab-button tab="registro" href="/tabs/registro">
+      <ion-button  fill="solid" shape="round" color="warning" style="padding-bottom: 15px;">
+        Registrarse
+      </ion-button>
+    </ion-tab-button>
+    </div>
+
+    <p>Olvidaste La Contraseña?</p>
+    <div style="text-align: center;">
+      <ion-tab-button tab="recuperar" href="/tabs/recuperar">
+      <ion-button  fill="solid" shape="round" color="primary" style="padding-bottom: 10px;">
+        Recuperar
+      
+      </ion-button>
+    </ion-tab-button>
+    </div>
+
+   </ion-card>
+</ion-content>
+

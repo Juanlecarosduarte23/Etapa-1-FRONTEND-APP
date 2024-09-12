@@ -1,0 +1,86 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Generar QR
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondohome">
+  <ion-header collapse="condense">
+   
+  </ion-header>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input label="Nombre completo:"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-select label="Período académico" placeholder="Seleccionar">
+        <ion-select-option value="1">Período 1 </ion-select-option>
+        <ion-select-option value="2">Período 2</ion-select-option>
+        <ion-select-option value="3">Período 3</ion-select-option>
+        <ion-select-option value="4">Período 4</ion-select-option>
+        <ion-select-option value="5">Período 5</ion-select-option>
+        <ion-select-option value="6">Período 6</ion-select-option>
+        <ion-select-option value="7">Período 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Asignatura" placeholder="Seleccionar">
+        <ion-select-option value="asig1">Asignatura 1 </ion-select-option>
+        <ion-select-option value="asig2">Asignatura 2</ion-select-option>
+        <ion-select-option value="asig3">Asignatura 3</ion-select-option>
+        <ion-select-option value="asig4">Asignatura 4</ion-select-option>
+        <ion-select-option value="asig5">Asignatura 5</ion-select-option>
+        <ion-select-option value="asig6">Asignatura 6</ion-select-option>
+        <ion-select-option value="asig7">Asignatura 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    
+    <ion-datetime presentation="date" [preferWheel]="true"></ion-datetime>
+    <ion-item>
+      <ion-select label="Profesor" placeholder="Seleccionar">
+        <ion-select-option value="profe1">Profesor 1</ion-select-option>
+        <ion-select-option value="profe2 ">Profesor 2</ion-select-option>
+        <ion-select-option value="profe3">Profesor 3</ion-select-option>
+        <ion-select-option value="profe4">Profesor 4</ion-select-option>
+        <ion-select-option value="profe5">Profesor 5</ion-select-option>
+        <ion-select-option value="profe6">Profesor 6</ion-select-option>
+        <ion-select-option value="profe7">Profesor 7</ion-select-option>
+      </ion-select>
+    </ion-item>
+   
+  </ion-list>
+
+  
+
+  <ion-card></ion-card>
+
+
+    
+  <div style="text-align: center;">
+    <ion-button (click)="login()" fill="solid" shape="round" color="primary" style="padding-bottom: 10px;">
+      Generar QR
+    </ion-button>
+  </div>
+
+  
+</ion-content>
+

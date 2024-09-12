@@ -1,0 +1,106 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Perfil Estudiante</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="fondohome">
+
+<ion-card>
+
+
+  <img src="../assets/cara.png">
+  <ion-list>
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="person-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Nombre Completo</h2>
+        <p>Juan Guillermo Lecaros Duarte</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="card-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Rut</h2>
+        <p>20.138.113-4</p>
+      </ion-label>
+    </ion-item>
+
+
+
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="newspaper-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Carrera</h2>
+        <p>Ingeniería en Informática</p>
+      </ion-label>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="home-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Dirección</h2>
+        <p>Maipú</p>
+      </ion-label>
+    </ion-item>
+
+
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="call-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Teléfono</h2>
+        <p>+56999999999</p>
+      </ion-label>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-icon aria-hidden="true" name="mail-open-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>Correo Electrónico</h2>
+        <p>ju.lecaros</p>
+      </ion-label>
+    </ion-item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </ion-list>
+
+
+
+</ion-card>
+
+</ion-content>

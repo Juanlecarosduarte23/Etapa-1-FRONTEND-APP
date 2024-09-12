@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" size="large" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Registro Usuario</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="dark"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondohome">
+
+
+  <ion-card-content>
+    <ion-item>
+     <ion-label position="stacked">Nombre:</ion-label>
+     <ion-input type="name" placeholder="Ingrese Nombre Completo" name="name" ></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label position="stacked">Email:</ion-label>
+    <ion-input type="name" placeholder="Ingrese Email" name="name" ></ion-input>
+  </ion-item>
+
+   <ion-item>
+     <ion-label position="stacked">Contraseña:</ion-label>
+     <ion-input type="password" placeholder="Ingrese contraseña" name="pass" ></ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-label position="stacked">Repita Contraseña:</ion-label>
+    <ion-input type="password" placeholder="Ingrese contraseña" name="pass" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Dirección:</ion-label>
+    <ion-input type="name" placeholder="Ingrese Dirección" name="name" ></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="stacked">Fecha de nacimiento:</ion-label>
+  <ion-input type="name" placeholder="Ingrese Fecha de nacimiento" name="name" ></ion-input>
+
+  <ion-item>
+    <ion-checkbox> Aceptar términos y condiciones </ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-toggle> Aceptar recibir información extra </ion-toggle>
+  </ion-item>
+  
+</ion-item>
+
+<div style="text-align: center;">
+  <ion-tab-button tab="tab2" href="/tabs/tab2">
+  <ion-button  fill="solid" shape="round" color="warning" style="padding-bottom: 15px;">
+    Registrarse
+  </ion-button>
+</ion-tab-button>
+</div>
+ </ion-card-content>
